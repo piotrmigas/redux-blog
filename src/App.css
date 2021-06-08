@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+/* Comments */
+
+.comments {
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Modal*/
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.modal-main {
+  position: fixed;
+  background: #fff;
+  width: 35%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+  border-bottom: 1px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.footer {
+  border-top: 1px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-cancel {
+  padding: 4px 17px;
+}
+
+.btn-details:active,
+.btn-cancel:active,
+.btn-save:active {
+  box-shadow: 1px 1px;
+  transform: translateX(1px) translateY(1px);
+}
+
+.btn-cancel:active,
+.btn-cancel:focus,
+.btn-cancel:focus:active,
+.btn-save:active,
+.btn-save:focus,
+.btn-save:focus:active {
+  outline: 0;
+}
+
+.btn-save {
+  color: #fff;
+  background-color: #075192;
+  padding: 4px 17px;
+}
+
+.form-control {
+  color: rgb(0, 0, 0) !important;
+}
+
+/*Utils*/
+
+.email {
+  text-decoration: underline;
+}
+
+.navy {
+  color: #075192;
+}
+
+.box-shadow {
+  box-shadow: 2px 2px black;
+}
+
+.btn-details {
+  border: 1px solid black;
+}
+
+.btn-details:hover {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+i {
+  cursor: pointer;
 }
